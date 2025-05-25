@@ -1,33 +1,33 @@
 @font-face {
-    font-family: Vazir;
-    src: url(../../Public/Fonts/Vazir.woff2);
+  font-family: Vazir;
+  src: url(../../Public/Fonts/Vazir.woff2);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: Vazir;
-    background-color: rgb(120 150 150);
-    /* background-color: rgb(181, 233, 233); */
+body {
+  font-family: Vazir;
+  background-color: rgb(120 150 150);
+  /* background-color: rgb(181, 233, 233); */
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-.login-logo{
-    border: 5px solid;
-    border-radius: 100%;
-    margin-bottom: 20px;
+.login-logo {
+  border: 5px solid;
+  border-radius: 100%;
+  margin-bottom: 20px;
 }
-.login-logo>svg{
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+.login-logo > svg {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
 }
 .login-form {
   max-width: 800px;
@@ -46,35 +46,50 @@ li{
   justify-content: space-evenly;
   gap: 15px;
 }
-.login-form > form>div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+.user-name-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.login-form > form>div>input {
-    padding: 10px 20px;
-    border-radius: 5px;
-    outline: none;
-    font-size: 15px;
-    border: 2px solid;
-    border-color: gray;
-    background-color: rgb(221, 248, 248);
-    border: 2px solid gray;
-    font-family: Vazir;
-    /* border: 2px solid red; */
+.user-name-content > input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  border: 2px solid;
+  border-color: gray;
+  background-color: rgb(221, 248, 248);
+  border: 2px solid gray;
+  font-family: Vazir;
+  /* border: 2px solid red; */
 }
-.login-form > form>div>span {
-    color: red;
-    font-size: 13px;
-    opacity: 0;
+.user-name-content > span {
+  color: red;
+  font-size: 13px;
+  opacity: 0;
 }
-.login-form > form>button {
-    padding: 5px 30px;
-    border-radius: 5px;
-    outline: none;
-    font-size: 15px;
-    background-color: rgb(130 222 129);
-    font-family: Vazir;
-    margin-top: 20px;
+.remember-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.login-form > form > button {
+  padding: 5px 30px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  background-color: rgb(130 222 129);
+  font-family: Vazir;
+  margin-top: 20px;
+}
+/* -------------------footer-login */
+.footer-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 30px;
 }
