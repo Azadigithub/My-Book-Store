@@ -1,15 +1,9 @@
-@font-face {
-    font-family: Vazir;
-    src: url(../Public/Fonts/Vazir.woff2);
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: Vazir;
     background-color: rgb(181, 233, 233);
 }
 a{
