@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود به سامانه</title>
+    <link rel="stylesheet" href="./Signin.css" />
+    <link rel="stylesheet" href="../../Styles/Media.css" />
+  </head>
+  <body dir="rtl">
+    <div class="login-form">
+      <form action="" onsubmit="">
+        <div class="login-title">
+            <h2>ورود به فروشگاه کتاب </h2>
+        </div>
+        <div class="login-logo">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="user-name-content">
+          <!-- user-name-content -->
+          <!-- <input type="number" placeholder="شماره همراه" id="mobile-number" /> -->
+          <input type="text" placeholder="شماره همراه" id="mobile-number" />
+          <span id="mobile-err">وارد کردن شماره همراه الزامی است!</span>
+        </div>
+        <div class="user-name-content">
+          <!-- user-name-content -->
+          <input type="password" placeholder="رمز عبور" id="password" />
+          <span id="password-err">رمز عبور رو وارد کنید</span>
+        </div>
+        <div class="user-name-content">
+          <input type="text" placeholder="ایمیل" id="email"  />
+          <span id="email-err"></span>
+        </div>
+        <div class="remember-me">
+          <input type="checkbox">
+          <p>من را به خاطر بسپار</p>
+        </div>
+        <button>ورود</button>
+      </form>
+      <div class="footer-login">
+        <div class="">
+            <a href="">بازیابی رمز عبور</a>
+        </div>
+            <a href="../Signup/Signup.html">ثبت نام</a>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+  <script src="../../Scripts/Signin.js"></script>
+</html>

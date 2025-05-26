@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ورود به سامانه</title>
-    <link rel="stylesheet" href="./Login.css" />
+    <title> ثبت نام در سامانه</title>
+    <link rel="stylesheet" href="./Signup.css" />
     <link rel="stylesheet" href="../../Styles/Media.css" />
   </head>
   <body dir="rtl">
     <div class="login-form">
       <form action="" onsubmit="">
         <div class="login-title">
-            <h2>ورود به فروشگاه کتاب </h2>
+            <h2> ثبت نام در فروشگاه کتاب </h2>
         </div>
         <div class="login-logo">
           <svg
@@ -38,16 +38,23 @@
         </div>
         <div class="user-name-content">
           <!-- user-name-content -->
+          <!-- <input type="number" placeholder="شماره همراه" id="mobile-number" /> -->
           <input type="text" placeholder="شماره همراه" id="mobile-number" />
           <span id="mobile-err">وارد کردن شماره همراه الزامی است!</span>
         </div>
         <div class="user-name-content">
           <!-- user-name-content -->
           <input type="password" placeholder="رمز عبور" id="password" />
-          <span id="password-err">رمز عبور رو وارد کنید</span>
+          <span id="password-err">رمز عبور را وارد کنید</span>
+        </div>
+        <div class="user-name-content">
+          <!-- user-name-content -->
+          <input type="password" placeholder="تکرار رمز عبور" id="repeat-password" />
+          <span id="repeat-password-err">تکرار رمز عبور را وارد کنید </span>
         </div>
         <div class="user-name-content">
           <input type="text" placeholder="ایمیل" id="email"  />
+          <span id="email-err"></span>
         </div>
         <div class="remember-me">
           <input type="checkbox">
@@ -59,12 +66,12 @@
         <div class="">
             <a href="">بازیابی رمز عبور</a>
         </div>
-            <a href="">ثبت نام</a>
+            <a href="../Signin/Signin.html">ورود</a>
         </div>
       </div>
 
     </div>
 
   </body>
-  <script src="../../Scripts/Script.js"></script>
+  <script src="../../Scripts/Signup.js"></script>
 </html>
