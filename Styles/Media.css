@@ -3,4 +3,12 @@
     width: 90%;
   }
 }
+@media screen and (max-width: 860px) {
+  .menu {
+    display: none;
+  }
+  .links {
+    width: 50%;
+  }
+}
 
