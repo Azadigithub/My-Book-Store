@@ -6,7 +6,20 @@ let repeatpassworderr = document.getElementById("repeat-password-err");
 let mobileError = document.getElementById("mobile-err");
 let email = document.getElementById("email");
 let emailerr = document.getElementById("email-err");
+let login = document.getElementById("login");
+let successmessage = document.getElementById("success-message");
 
+
+login.addEventListener("click", function (event) {
+  console.log("ssf");
+  event.preventDefault()
+  setTimeout(function () {
+      successmessage.style.display = "block";
+      setTimeout(function () {
+        window.location.href = "../../index.html"; // یا آدرس صفحه‌ی اصلی
+      }, 3000);
+  }, 2000);
+});
 let enteredpassword;
 password.addEventListener("keyup", function (event) {
   console.log(event.target.value.length);

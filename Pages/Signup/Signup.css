@@ -2,7 +2,21 @@
   font-family: Vazir;
   src: url(../../Public/Fonts/Vazir.woff2);
 }
-
+.success-message {
+  display: none;
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(21, 87, 36, 0.2);
+  position: relative;
+  animation: slideIn 1s ease forwards;
+  white-space: nowrap;
+  font-size: 1.2rem;
+}
 * {
   margin: 0;
   padding: 0;
