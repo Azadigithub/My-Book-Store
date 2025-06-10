@@ -8,19 +8,36 @@ let email = document.getElementById("email");
 let emailerr = document.getElementById("email-err");
 let login = document.getElementById("login");
 let successmessage = document.getElementById("success-message");
-
+let passwordvalid = false;
+let phonenumbervalid = false;
 
 login.addEventListener("click", function (event) {
-  console.log("ssf");
-  event.preventDefault()
-  setTimeout(function () {
-      successmessage.style.display = "block";
-      setTimeout(function () {
-        window.location.href = "../../index.html"; // یا آدرس صفحه‌ی اصلی
-      }, 3000);
-  }, 2000);
+  if((passwordvalid & phonenumbervalid)){
+    event.preventDefault()
+    successmessage.innerHTML= '  ✅ثبت نام با موفقیت انجام شد!'
+    successmessage.style.backgroundColor = "#89e8a0";
+    successmessage.style.opacity = "1";
+    successmessage.style.visibility = "visible";
+    setTimeout(function () {
+      //   successmessage.style.display = "block";
+      window.location.href = "../../index.html"; // یا آدرس صفحه‌ی اصلی
+        // setTimeout(function () {
+        // }, 3000);
+    },3000);
+  }else{
+    event.preventDefault()
+    console.log(phonenumbervalid);
+    console.log(passwordvalid);
+    successmessage.innerHTML= ' وارد کردن فیلد های زیر به صورت صحیح الزامی است!'
+    successmessage.style.opacity = "1";
+    successmessage.style.backgroundColor = "#ef6767";
+    successmessage.style.visibility = "visible";
+    setTimeout(function(){
+      successmessage.style.opacity = "0";
+      successmessage.style.visibility = "hidden";
+    },3000)
+  }
 });
-let enteredpassword;
 password.addEventListener("keyup", function (event) {
   console.log(event.target.value.length);
   enteredpassword = event.target.value;
@@ -29,13 +46,15 @@ password.addEventListener("keyup", function (event) {
   if (enteredpassword.length < 8) {
     passwordError.style.color = "red";
     passwordError.innerHTML = "رمز عبور باید حداقل 8 کاراکتر باشد";
+    passwordvalid=false;
   } else {
     // passwordError.style.color = 'green';
     // passwordError.innerHTML = 'رمز عبور به درستی وارد شد';
+    console.log(passwordvalid);
+    
     passwordError.style.opacity = "0";
   }
 });
-
 mobilenumber.addEventListener("keyup", function (event) {
   console.log(event.target.value);
   mobileError.style.opacity = "100";
@@ -44,7 +63,9 @@ mobilenumber.addEventListener("keyup", function (event) {
   if (event.target.value.length == 0) {
     mobileError.style.color = "red";
     mobileError.innerHTML = "وارد کردن شماره همراه الزامی است!";
+    phonenumbervalid= false;
   } else if (!regex.test(event.target.value)) {
+    phonenumbervalid= false;
     mobileError.style.color = "red";
     if (!event.target.value.startsWith("09")) {
       mobileError.innerHTML = "شماره همراه باید با 09 شروع شود!";
@@ -54,6 +75,8 @@ mobilenumber.addEventListener("keyup", function (event) {
       mobileError.innerHTML = "شماره همراه باید 11 رقم باشد!";
     }
   } else {
+    phonenumbervalid= true;
+    console.log(phonenumbervalid);
     mobileError.style.opacity = "0";
   }
 });
@@ -61,9 +84,13 @@ mobilenumber.addEventListener("keyup", function (event) {
 repeatpassword.addEventListener("keyup", function (event) {
   repeatpassworderr.style.opacity = "100";
   if (event.target.value != enteredpassword) {
+    repeatpassword = false;
     repeatpassworderr.innerHTML = "تکرار رمز عبور یکسان نیست!";
+    passwordvalid = false;
   } else {
     repeatpassworderr.style.opacity = "0";
+    passwordvalid = true;
+    console.log(passwordvalid);
   }
 });
 checkpass(password)

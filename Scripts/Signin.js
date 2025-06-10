@@ -34,7 +34,6 @@ login.addEventListener("click", function (event) {
       successmessage.style.opacity = "0";
       successmessage.style.visibility = "hidden";
     },3000)
-    
   }
 });
 password.addEventListener("keyup", function (event) {
