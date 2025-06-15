@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Swiper Coverflow با Free Mode پیشرفته</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <style>
+    body, html {
+      margin: 0; padding: 0; height: 100%;
+      display: flex; justify-content: center; align-items: center;
+      background: #fff;
+      direction: rtl;
+    }
+    .swiper {
+      width: 520px;
+      height: 240px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 250px;
+      height: 240px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url('https://picsum.photos/id/1018/320/240')"></div>
+      <div class="swiper-slide" style="background-image:url('https://picsum.photos/id/1025/320/240')"></div>
+      <div class="swiper-slide" style="background-image:url('https://picsum.photos/id/1035/320/240')"></div>
+      <div class="swiper-slide" style="background-image:url('https://picsum.photos/id/1041/320/240')"></div>
+      <div class="swiper-slide" style="background-image:url('https://picsum.photos/id/1050/320/240')"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      freeMode: {
+        enabled: true,
+        minimumVelocity: 0.05,
+        momentum: true,
+        momentumBounce: true,
+        momentumBounceRatio: 1,
+        momentumRatio: 1,
+        momentumVelocityRatio: 1,
+        sticky: false,
+      },
+      loop: true,
+      coverflowEffect: {
+        rotate: 30,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+    });
+  </script>
+
+</body>
+</html>
