@@ -6,31 +6,77 @@
     <link rel="stylesheet" href="./Styles/Style.css" />
     <link rel="stylesheet" href="./Styles/Media.css" />
     <title>فروشگاه کتاب</title>
-    <!-- <title>Book Search Page</title> -->
-    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        /* background: #000; */
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 90%;
+        height: 250px;
+        border-radius: 10px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide>img {
+        display: block;
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
-
- 
     <header>
       <div class="header-container">
-        <div class="user-icon right"><a href="./User-page/User.html">👤</a></div>
+        <div class="user-icon right">
+          <a href="./User-page/User.html">👤</a>
+        </div>
 
         <div class="menu">
-            <ul>
-                <li><a href="./Pages/Slider/Slider.html">ارتباط با پشتیبانی</a></li>
-                <li><a href="./Pages/Slider/Slider2.html">مشاهده سبد خرید</a></li>
-                <li><a href="./Pages/Slider/Slide3.html">محصولات مورد علاقه</a></li>
-                <li><a href="./Pages/Slider/Slider6.html">دربار ما</a></li>
-            </ul>
+          <ul>
+            <li><a href="./Pages/Slider/Slider.html">ارتباط با پشتیبانی</a></li>
+            <li><a href="./Pages/Slider/Slider2.html">مشاهده سبد خرید</a></li>
+            <li><a href="./Pages/Slider/Slide3.html">محصولات مورد علاقه</a></li>
+            <li><a href="./Pages/Slider/Slider6.html">دربار ما</a></li>
+          </ul>
         </div>
         <div class="links">
-            <ul>
-                <li><a href="./Pages/Signin/Signin.html">ورود</a></li>
-                <li><a href="./Pages/Signup/Signup.html">ثبت نام</a></li>
-            </ul>
+          <ul>
+            <li><a href="./Pages/Signin/Signin.html">ورود</a></li>
+            <li><a href="./Pages/Signup/Signup.html">ثبت نام</a></li>
+          </ul>
         </div>
-
       </div>
     </header>
 
@@ -42,12 +88,10 @@
           <input type="text" placeholder="جستجوی کتب و جزوه..." />
         </div>
       </div>
-
       <section class="banner">
         <div class="banner-item">
           <p>دوست دارید کتب خاصی مطالعه کنید؟</p>
           <p><button>محبوب‌ها کتب</button></p>
-
           <img
             src="images/11663632_20944530 1.png"
             alt="Books Stack"
@@ -66,115 +110,48 @@
           <button>موضوع‌ها</button>
         </div>
       </section>
-      <!-- <section>
-        <div class="slider-wrapper">
-          <button id="prev" class="nav-btn">‹</button>
-
-          <div class="slider" id="slider">
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300x180"
-                class="card-img-top"
-                alt="محصول ۱"
-              />
-              <div class="card-body">
-                <h5 class="card-title">محصول ۱</h5>
-                <a href="#" class="btn">بیشتر</a>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300x180"
-                class="card-img-top"
-                alt="محصول ۲"
-              />
-              <div class="card-body">
-                <h5 class="card-title">محصول ۲</h5>
-                <a href="#" class="btn">بیشتر</a>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                src="https://via.placeholder.com/300x180"
-                class="card-img-top"
-                alt="محصول ۳"
-              />
-              <div class="card-body">
-                <h5 class="card-title">محصول ۳</h5>
-                <a href="#" class="btn">بیشتر</a>
-              </div>
-            </div>
-          </div>
-
-          <button id="next" class="nav-btn">›</button>
-        </div>
-      </section> -->
       <section>
         <div class="slider-wrapper">
           <button id="prev" class="nav-btn">‹</button>
 
           <div class="slider" id="slider">
             <div class="card">
-              <img
-                src="images/book1.png"
-                class="card-img-top"
-                alt="محصول ۱"
-              />
+              <img src="images/book1.png" class="card-img-top" alt="محصول ۱" />
               <div class="card-body">
                 <h5 class="card-title">محصول ۱</h5>
                 <a href="#" class="btn">بیشتر</a>
               </div>
             </div>
             <div class="card">
-              <img
-                src="images/book2.webp"
-                class="card-img-top"
-                alt="محصول ۲"
-              />
+              <img src="images/book2.webp" class="card-img-top" alt="محصول ۲" />
               <div class="card-body">
                 <h5 class="card-title">محصول ۲</h5>
                 <a href="#" class="btn">بیشتر</a>
               </div>
             </div>
             <div class="card">
-              <img
-                src="images/book3.png"
-                class="card-img-top"
-                alt="محصول ۳"
-              />
+              <img src="images/book3.png" class="card-img-top" alt="محصول ۳" />
               <div class="card-body">
                 <h5 class="card-title">محصول ۳</h5>
                 <a href="#" class="btn">بیشتر</a>
               </div>
             </div>
             <div class="card">
-              <img
-                src="images/book1.png"
-                class="card-img-top"
-                alt="محصول ۱"
-              />
+              <img src="images/book1.png" class="card-img-top" alt="محصول ۱" />
               <div class="card-body">
                 <h5 class="card-title">محصول 4</h5>
                 <a href="#" class="btn">بیشتر</a>
               </div>
             </div>
             <div class="card">
-              <img
-                src="images/book2.webp"
-                class="card-img-top"
-                alt="محصول ۲"
-              />
+              <img src="images/book2.webp" class="card-img-top" alt="محصول ۲" />
               <div class="card-body">
                 <h5 class="card-title">محصول 5</h5>
                 <a href="#" class="btn">بیشتر</a>
               </div>
             </div>
             <div class="card">
-              <img
-                src="images/book3.png"
-                class="card-img-top"
-                alt="محصول ۳"
-              />
+              <img src="images/book3.png" class="card-img-top" alt="محصول ۳" />
               <div class="card-body">
                 <h5 class="card-title">محصول 6</h5>
                 <a href="#" class="btn">بیشتر</a>
@@ -213,11 +190,7 @@
               </div>
             </div>
             <div class="card">
-              <img
-                src="images/book5.png"
-                class="card-img-top"
-                alt="محصول ۳"
-              />
+              <img src="images/book5.png" class="card-img-top" alt="محصول ۳" />
               <div class="card-body">
                 <h5 class="card-title">محصول ۳</h5>
                 <a href="#" class="btn">بیشتر</a>
@@ -246,11 +219,7 @@
               </div>
             </div>
             <div class="card">
-              <img
-                src="images/book5.png"
-                class="card-img-top"
-                alt="محصول ۳"
-              />
+              <img src="images/book5.png" class="card-img-top" alt="محصول ۳" />
               <div class="card-body">
                 <h5 class="card-title">محصول 6</h5>
                 <a href="#" class="btn">بیشتر</a>
@@ -261,58 +230,22 @@
           <button id="next" class="nav-btn">›</button>
         </div>
       </section>
-      <!-- <section>
-        <div class="slider-wrapper">
-          <button id="prev" class="nav-btn">‹</button>
-
-          <div class="slider" id="slider">
-            <div class="card">
-              <img
-                src="images/11663632_20944530 1.png"
-                class="card-img-top"
-                alt="محصول ۱"
-              />
-              <div class="card-body">
-                <h5 class="card-title">محصول ۱</h5>
-                <a href="#" class="btn">بیشتر</a>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                src="images/23673318_6822722 1.png"
-                class="card-img-top"
-                alt="محصول ۲"
-              />
-              <div class="card-body">
-                <h5 class="card-title">محصول ۲</h5>
-                <a href="#" class="btn">بیشتر</a>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                src="/images/book5.png"
-                class="card-img-top"
-                alt="محصول ۳"
-              />
-              <div class="card-body">
-                <h5 class="card-title">محصول ۳</h5>
-                <a href="#" class="btn">بیشتر</a>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                src=""
-                class="card-img-top"
-                alt="محصول ۳"
-              />
-              <div class="card-body">
-                <h5 class="card-title">محصول ۳</h5>
-                <a href="#" class="btn">بیشتر</a>
-              </div>
-            </div>
-          <button id="next" class="nav-btn">›</button>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/Books/book1.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Books/book2.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Books/book3.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Books/book4.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Books/book5.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Books/book6.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Books/book7.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Books/book8.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Books/book9.webp" alt=""></div>
         </div>
-      </section> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
 
       <section class="chat-section">
         <a href="#"
@@ -337,6 +270,45 @@
         </div>
       </div>
     </footer>
-    <script src="js/js.js"></script>
   </body>
+  <script src="js/js.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3, // تعداد اسلایدهای قابل مشاهده
+      slidesPerGroup: 1, // چند اسلاید در هر بار شیفت شود
+      spaceBetween: 30,
+      centeredSlides: false, // چون ما می‌خواهیم ۳ تا کنار هم باشن، نیازی به centeredSlides نیست
+      loop: true, // اگر می‌خواهید حلقه‌وار بچرخه
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        400: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      },
+    });
+  </script>
 </html>

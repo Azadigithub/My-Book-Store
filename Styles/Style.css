@@ -2,6 +2,7 @@
   font-family: Vazir;
   src: url(../Public/Fonts/Vazir.woff2);
 }
+
 body {
   font-family: Vazir;
   background-color: rgb(181, 233, 233);
@@ -172,6 +173,7 @@ section {
 
 footer {
   background-color: #fff;
+  margin-top: 30px;
   padding: 20px;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
