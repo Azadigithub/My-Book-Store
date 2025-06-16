@@ -2,7 +2,9 @@
   font-family: Vazir;
   src: url(../Public/Fonts/Vazir.woff2);
 }
-
+h1,h5 {
+  color: rebeccapurple;
+}
 body {
   font-family: Vazir;
   background-color: rgb(181, 233, 233);
@@ -18,6 +20,7 @@ li {
 }
 
 * {
+  font-family: vazir;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,7 +34,6 @@ header {
   position: sticky;
   top: 0;
 }
-
 .header-container {
   display: flex;
   justify-content: space-around;
@@ -44,7 +46,7 @@ header {
   border-radius: 50px;
 }
 
-.header-container h1 {
+.header-container > h1 {
   font-size: 20px;
   color: #333;
 }
@@ -55,8 +57,8 @@ header {
 }
 
 .search-bar {
-    width: 90%;
-    margin: 10px auto;
+  width: 90%;
+  margin: 10px auto;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -84,21 +86,22 @@ header {
 .banner {
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  margin: 40px 20px;
 }
 
 .banner-item {
-  /* background-color: #fff; */
+  width: 25%;
   border-radius: 15px;
-  /* padding: 10px; */
   text-align: center;
-  /* width: 45%; */
+}
+.banner-item button {
+  font-family: vazir;
 }
 .img-banner {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.banner-item p {
+.banner-item > p {
   margin: 10px 0;
   font-size: 14px;
   /* color: #555; */
@@ -112,6 +115,11 @@ header {
   border-radius: 7px;
   cursor: pointer;
 }
+.banner-item > img {
+  width: 100%;
+  object-fit: contain;
+  height: 75%;
+}
 
 .popular-books,
 .new-books {
@@ -123,6 +131,9 @@ header {
   font-size: 18px;
   margin-bottom: 15px;
   /* color: #333; */
+}
+.card>img{
+      object-fit: cover;
 }
 
 /* .book-card {
@@ -165,6 +176,10 @@ section {
   margin: 20px auto;
 }
 .chat-section {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 10px;
   right: 20px;
@@ -209,7 +224,6 @@ footer {
   color: #007bff;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .prev,
   .next {
@@ -223,45 +237,54 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .prev,
   .next {
     font-size: 1.2rem;
     padding: 4px 8px;
   }
-}
+  .card > img {
+    max-width: 330px;
+    max-height: 280px;
+  }
+  .slider {
+    grid-template-columns: repeat(2, auto);
+  }
+} */
 .slider-wrapper {
   display: flex;
   align-items: center;
   overflow: hidden;
-  /* padding: 10px; */
+  border-top: 2px solid #b8b4d1;
+  border-bottom: 2px solid #b8b4d1;
+  /* border-radius: 20px; */
+  padding: 20px;
 }
 
 .slider {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  /* scroll-behavior: smooth; */
-  /* scroll-snap-type: x mandatory; */
-  /* -webkit-overflow-scrolling: touch; */
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   width: 100%;
   padding-bottom: 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
-/* 👇 هر کارت یک‌سوم عرض صفحه - با فاصله 16px هم حساب شده */
 .card {
-  flex: 0 0 calc((100% - 32px) / 3);
+  max-width: 250px;
+  height: 300px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 0.5rem;
   scroll-snap-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  max-width: 100%;
 }
 .card > img {
-  max-width: 411px;
-  max-height: 359px;
+  width: 100%;
+  height: 75%;
+  /* width: 330px;
+    height: 280px; */
 }
 
 .card-img-top {
@@ -271,7 +294,10 @@ footer {
 }
 
 .card-body {
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .card-title {
@@ -305,7 +331,6 @@ footer {
   z-index: 10;
 }
 
-/* مخفی کردن اسکرول‌بار */
 .slider::-webkit-scrollbar {
   display: none;
 }
@@ -327,6 +352,7 @@ footer {
   justify-content: space-between;
 }
 .menu > ul > li > a {
+  font-family: vazir;
   padding: 10px;
   font-size: 15px;
 }
@@ -342,6 +368,16 @@ footer {
   border: 2px solid;
   border-radius: 20px;
 }
-.card>img{
-    padding: 20px;
+.card > img {
+  padding: 20px;
+}
+/* -------Slider--------------------------- */
+.slider-title {
+  width: 300px;
+  margin: 0 auto;
+}
+.slider-title > h1 {
+  font-family: vazir;
+  text-align: center;
+  padding-bottom: 10px;
 }

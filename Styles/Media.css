@@ -11,4 +11,33 @@
     width: 50%;
   }
 }
-
+@media screen and (max-width: 910px) {
+  .slider {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media screen and (max-width: 750px) {
+  .slider {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 450px) {
+  .slider {
+    grid-template-columns: repeat(1, auto);
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .banner-item > img {
+    min-width: 250px;
+  }
+}

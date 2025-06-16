@@ -1,4 +1,7 @@
 
+// --------------------
+
+
 const slider = document.getElementById("slider");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");

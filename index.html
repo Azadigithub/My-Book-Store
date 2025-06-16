@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles.css" />
     <link rel="stylesheet" href="./Styles/Style.css" />
     <link rel="stylesheet" href="./Styles/Media.css" />
     <title>فروشگاه کتاب</title>
@@ -15,46 +16,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
-    <!-- Demo styles -->
-    <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
-
-      body {
-        /* background: #000; */
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #fff;
-        margin: 0;
-        padding: 0;
-      }
-
-      .swiper {
-        width: 90%;
-        height: 250px;
-        border-radius: 10px;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-slide>img {
-        display: block;
-        width: 80%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -90,8 +51,8 @@
       </div>
       <section class="banner">
         <div class="banner-item">
-          <p>دوست دارید کتب خاصی مطالعه کنید؟</p>
-          <p><button>محبوب‌ها کتب</button></p>
+          <!-- <p>دوست دارید کتب خاصی مطالعه کنید؟</p> -->
+          <p><button>مشاهده علاقه مندی ها</button></p>
           <img
             src="images/11663632_20944530 1.png"
             alt="Books Stack"
@@ -106,66 +67,115 @@
             width="173px"
             height="173px"
           />
-          <p>دوست دارید در کتابخانه موضوعی جستجو کنید؟</p>
+          <!-- <p>دوست دارید در کتابخانه موضوعی جستجو کنید؟</p> -->
           <button>موضوع‌ها</button>
         </div>
       </section>
       <section>
+        <div class="slider-title">
+          <h1>دنبال چه نوع کتابهایی هستی؟</h1>
+        </div>
         <div class="slider-wrapper">
-          <button id="prev" class="nav-btn">‹</button>
-
-          <div class="slider" id="slider">
+          <div class="slider">
             <div class="card">
-              <img src="images/book1.png" class="card-img-top" alt="محصول ۱" />
+              <img src="images/Books/daneshgahi.jpg" class="card-img-top" alt="محصول ۱" />
               <div class="card-body">
-                <h5 class="card-title">محصول ۱</h5>
+                <h5 class="card-title">دانشگاهی</h5>
                 <a href="#" class="btn">بیشتر</a>
               </div>
             </div>
             <div class="card">
-              <img src="images/book2.webp" class="card-img-top" alt="محصول ۲" />
+              <img src="images/Books/elmi.jpg" class="card-img-top" alt="محصول ۲" />
               <div class="card-body">
-                <h5 class="card-title">محصول ۲</h5>
+                <h5 class="card-title">علمی</h5>
                 <a href="#" class="btn">بیشتر</a>
               </div>
             </div>
             <div class="card">
-              <img src="images/book3.png" class="card-img-top" alt="محصول ۳" />
+              <img src="images/Books/adabi.jpg" class="card-img-top" alt="محصول ۳" />
               <div class="card-body">
-                <h5 class="card-title">محصول ۳</h5>
+                <h5 class="card-title">ادبی</h5>
                 <a href="#" class="btn">بیشتر</a>
               </div>
             </div>
             <div class="card">
-              <img src="images/book1.png" class="card-img-top" alt="محصول ۱" />
+              <img src="images/Books/tarikhi.jpg" class="card-img-top" alt="محصول ۱" />
               <div class="card-body">
-                <h5 class="card-title">محصول 4</h5>
+                <h5 class="card-title">تاریخی</h5>
                 <a href="#" class="btn">بیشتر</a>
               </div>
             </div>
             <div class="card">
-              <img src="images/book2.webp" class="card-img-top" alt="محصول ۲" />
+              <img src="images/Books/dini.jpeg" class="card-img-top" alt="محصول ۲" />
               <div class="card-body">
-                <h5 class="card-title">محصول 5</h5>
+                <h5 class="card-title">مذهبی و دینی</h5>
                 <a href="#" class="btn">بیشتر</a>
               </div>
             </div>
             <div class="card">
-              <img src="images/book3.png" class="card-img-top" alt="محصول ۳" />
+              <img src="images/Books/mohandesi.jpeg" class="card-img-top" alt="محصول ۳" />
               <div class="card-body">
-                <h5 class="card-title">محصول 6</h5>
+                <h5 class="card-title">فنی و مهندسی</h5>
+                <a href="#" class="btn">بیشتر</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/Books/peseshki.jpg" class="card-img-top" alt="محصول ۳" />
+              <div class="card-body">
+                <h5 class="card-title">پزشکی و سلامت</h5>
+                <a href="#" class="btn">بیشتر</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/Books/honar.jpg" class="card-img-top" alt="محصول ۳" />
+              <div class="card-body">
+                <h5 class="card-title">هنر و معماری</h5>
                 <a href="#" class="btn">بیشتر</a>
               </div>
             </div>
           </div>
-
-          <button id="next" class="nav-btn">›</button>
         </div>
       </section>
+      <div class="">
+        <div class="slider-title">
+          <h1>پر فروش ترین ها</h1>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/Books/book1.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/Books/book2.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/Books/book3.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/Books/book4.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/Books/book5.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/Books/book6.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/Books/book7.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/Books/book8.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/Books/book9.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
       <section>
         <div class="slider-wrapper">
-          <button id="prev" class="nav-btn">‹</button>
-
           <div class="slider" id="slider">
             <div class="card">
               <img
@@ -226,25 +236,48 @@
               </div>
             </div>
           </div>
-
-          <button id="next" class="nav-btn">›</button>
         </div>
       </section>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./images/Books/book1.webp" alt=""></div>
-          <div class="swiper-slide"><img src="./images/Books/book2.webp" alt=""></div>
-          <div class="swiper-slide"><img src="./images/Books/book3.webp" alt=""></div>
-          <div class="swiper-slide"><img src="./images/Books/book4.webp" alt=""></div>
-          <div class="swiper-slide"><img src="./images/Books/book5.webp" alt=""></div>
-          <div class="swiper-slide"><img src="./images/Books/book6.webp" alt=""></div>
-          <div class="swiper-slide"><img src="./images/Books/book7.webp" alt=""></div>
-          <div class="swiper-slide"><img src="./images/Books/book8.webp" alt=""></div>
-          <div class="swiper-slide"><img src="./images/Books/book9.webp" alt=""></div>
+
+      <!-- main slider -->
+      <div>
+        <div class="slider-title">
+          <h1>محبوب ترین ها</h1>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide main">
+              <img src="./images/Books/book1.webp" alt="slide 1" />
+            </div>
+            <div class="swiper-slide main">
+              <img src="./images/Books/book1.webp" alt="slide 1" />
+            </div>
+            <div class="swiper-slide main">
+              <img src="./images/Books/book2.webp" alt="slide 2" />
+            </div>
+            <div class="swiper-slide main">
+              <img src="./images/Books/book2.webp" alt="slide 2" />
+            </div>
+            <div class="swiper-slide main">
+              <img src="./images/Books/book3.webp" alt="slide 3" />
+            </div>
+            <div class="swiper-slide main">
+              <img src="./images/Books/book3.webp" alt="slide 3" />
+            </div>
+            <div class="swiper-slide main">
+              <img src="./images/Books/book4.webp" alt="slide 4" />
+            </div>
+            <div class="swiper-slide main">
+              <img src="./images/Books/book4.webp" alt="slide 4" />
+            </div>
+            <div class="swiper-slide main">
+              <img src="./images/Books/book5.webp" alt="slide 5" />
+            </div>
+            <div class="swiper-slide main">
+              <img src="./images/Books/book5.webp" alt="slide 5" />
+            </div>
+          </div>
+        </div>
       </div>
 
       <section class="chat-section">
@@ -271,26 +304,21 @@
       </div>
     </footer>
   </body>
-  <script src="js/js.js"></script>
+  <!-- <script src="./Scripts/Script.js"></script> -->
   <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3, // تعداد اسلایدهای قابل مشاهده
-      slidesPerGroup: 1, // چند اسلاید در هر بار شیفت شود
+    let swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      slidesPerGroup: 1,
       spaceBetween: 30,
-      centeredSlides: false, // چون ما می‌خواهیم ۳ تا کنار هم باشن، نیازی به centeredSlides نیست
-      loop: true, // اگر می‌خواهید حلقه‌وار بچرخه
+      centeredSlides: false,
+      loop: true,
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
       },
-      // pagination: {
-      //   el: ".swiper-pagination",
-      //   clickable: true,
-      // },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -310,5 +338,42 @@
         },
       },
     });
+    // ----
+    const swiper2 = new Swiper(".main", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      loop: false,
+      coverflowEffect: {
+        rotate: 30,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+    });
+    let direction = 1;
+    setInterval(() => {
+      const maxIndex = swiper.slides.length - 1;
+      const isAtStart = swiper.activeIndex === 0;
+      const isAtEnd = swiper.activeIndex === maxIndex;
+
+      if (direction === 1) {
+        if (!isAtEnd) {
+          swiper.slideNext();
+        } else {
+          direction = -1;
+          swiper.slidePrev();
+        }
+      } else {
+        if (!isAtStart) {
+          swiper.slidePrev();
+        } else {
+          direction = 1;
+          swiper.slideNext();
+        }
+      }
+    }, 2500);
   </script>
 </html>
